@@ -9,31 +9,26 @@
 <body>
 
 	<!-- HEADER -->
-
+	<div class="h-border1"></div>
 	<header>
-		<div>
-			<div class="logo">
-				<h1>Alex</h1><h1>Gorokholinsky</h1>
-			</div>
-			<div class="krono-logo">
-				<img src="images/kd_logo_white.png">
-			</div>
-			<nav>
-				<a href="#about"><div>ABOUT</div></a>
-				<a href="#projects"><div>PROJECTS</div></a>
-				<a href="#contact"><div>CONTACT</div></a>
-			</nav>
-			<div class="clear"></div>
+		<div class="logo">
+			<h1><span>A</span>lexey Gorokholinsky</h1>
 		</div>
-
+		<nav>
+			<a href="#about"><div>ABOUT</div></a>
+			<a href="#projects"><div>PROJECTS</div></a>
+			<a href="#contact"><div>CONTACT</div></a>
+		</nav>
 	</header>
+	<div class="h-border2"></div>
 
 	<!-- ABOUT -->
 	
 	<div class="about-section">
 		<div id="about">
 			<div class="text">
-			I am a creative and detail-oriented web developer with professional background in audio-engineering, video production and classical music performance.<br><br> Aside from programming my hobbies include electronic music production, filming, DJ-ing, and bench-watching old and new anime series.<br><br>
+			I am a creative and detail-oriented web developer with professional background in audio-engineering, video production and classical music performance.<br><br> Aside from programming my hobbies include electronic music production, filming, DJ-ing, and bench-watching old and new anime series.<br>
+			<div class="check_projects">Check some of my projects by clicking <a href="#projects"> here</a></div><br>
 			My skills as a web-developer include<br><br>
 			<h3>React.js</h3><h3>JavaScript</h3><h3>jQuery</h3><h3>HTML5</h3><h3>CSS3</h3><h3>Bootstrap</h3><h3>Node.js</h3><h3>Express</h3><h3>PostgreSQL</h3><h3>CLI</h3>
 			</div>
@@ -52,8 +47,8 @@
 			<div class="title">PROJECTS</div>
 			<div class="col-2">
 				<h2>Hidden Eateries NYC</h2>
-				<a href="https://hiddeneateries-rpkidiwjbc.now.sh/" target="_blank"><img src="images/hidden_eateries.jpg"></a>
-				<a href="https://hiddeneateries-rpkidiwjbc.now.sh/" target="_blank"><div class="project-btn">
+				<a href="https://hiddeneateries-edesauclsu.now.sh/" target="_blank"><img src="images/hidden_eateries.jpg"></a>
+				<a href="https://hiddeneateries-edesauclsu.now.sh/" target="_blank"><div class="project-btn">
 					Live
 				</div></a>
 				<a href="https://git.generalassemb.ly/goalexey/project_03" target="_blank"><div class="project-btn">
@@ -120,7 +115,7 @@
 	<div class="contact-section">
 		<div class="contact" id="contact">
 			<div class="title">CONTACT</div>
-			<form class="contact-form">
+			<form method="post" action="contact.php" class="contact-form">
 				<label>Full Name<br>
 					<input name="name" title="Full Name" placeholder="Full Name">
 				</label><br><br>
@@ -128,9 +123,9 @@
 					<input name="email" title="Email" placeholder="Your Email">
 				</label><br><br><br>
 				<label>Your Message<br>
-					<textarea></textarea>
+					<textarea name="message"></textarea>
 				</label>
-				<div class="my-submit-btn">Submit</div>
+				<button type="submit" name="submit" class="my-submit-btn">Submit</button>
 				
 			</form>
 		</div>
@@ -140,11 +135,8 @@
 
 	<footer>
 		<div>
-			&copy; 2017 Alex Gorokholinsky
+			&copy; 2017 Alexey Gorokholinsky
 		</div>
-		<!-- <div>
-			
-		</div> -->
 	</footer>
 
 <script rel="text/javascript" src="scripts/script.js"></script>
