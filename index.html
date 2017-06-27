@@ -9,10 +9,15 @@
 <body>
 
 	<!-- HEADER -->
+	<!--animated upper border-->
 	<div class="h-border1"></div>
 	<header>
 		<div class="logo">
-			<h1><span>A</span>lexey Gorokholinsky</h1>
+			<h1>Alexey Gorokholinsky</h1>
+			<h2>Fullstack Web Developer</h2>
+		</div>
+		<div class="description">
+			
 		</div>
 		<nav>
 			<a href="#about"><div>ABOUT</div></a>
@@ -20,37 +25,59 @@
 			<a href="#contact"><div>CONTACT</div></a>
 		</nav>
 	</header>
+	<!--animated bottom border-->
 	<div class="h-border2"></div>
 
 	<!-- ABOUT -->
 	
+	<!--entire section with 100% height-->
 	<div class="about-section">
+		<!--wrapper with darker background-->
 		<div id="about">
-			<div class="main-about">
-				I am an inspirational and detail-oriented web developer with professional background in audio-engineering, video production and classical music performance.
+			<div class="clearfix">
+				<!--about div with the text-->
+				<div class="main-about">
+					I am an inspirational and detail-oriented web developer with professional background in audio-engineering, video production and classical music performance.
+					<!--smaller text div with more detailed info-->
 					<div class="sub-about">
 						To give a bit more background story - I come from classical music family, and since 7 years old I've been playing clarinet. After attending The Juilliard School and being part of Carnegie Hall's artist program "Connect", I decided to explore the world of audio-engineering, electronic music production, and DJ-ing. Having the pleasure of teaching Audio Engineering at Institute of Audio Research at lower manhattan and releasing my Electronic Music projects on various UK based labels, I decided to explore the world of coding and creating web applications, just like I did with music. Here I am today, tinkering things for best user experience on front end while making sure everything works properly on back end.<br/><br/>
 						Aside from programming my hobbies include sriting music scores for contemporary dance production, filming, DJ-ing, and bench-watching old and new anime series.<br>
 					</div>
-				My skills as a web-developer include<br><br>
-				<h3>React.js</h3><h3>JavaScript</h3><h3>jQuery</h3><h3>HTML5</h3><h3>CSS3</h3><h3>Bootstrap</h3><h3>Node.js</h3><h3>Express</h3><h3>PostgreSQL</h3><h3>CLI</h3><h3>Ruby</h3><h3>Ruby on Rails</h3>
+				</div>
+				<!--photo image-->
+				<div id="about-img-div">
+					<img src="images/about_img.png">
+					<div class="skills-wrapper">
+						<h2>My skills as a web-developer include</h2>
+						<div class="skills-div">
+							<h3>React.js</h3><h3>JavaScript</h3><h3>jQuery</h3><h3>HTML5</h3><h3>CSS3</h3><h3>Bootstrap</h3><h3>Node.js</h3><h3>Express</h3><h3>PostgreSQL</h3><h3>CLI</h3><h3>Ruby</h3><h3>Ruby on Rails</h3>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="about-img-div">
-				<img src="images/about_img.png">
-			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
 
 	<!-- PROJECTS -->
 
 	<!-- <div class="space" id="projects"></div> -->
+	<!--wrapper for entire section-->
 	<div class="projects-section" id="projects">
-		<div class="projects">
+		<div class="projects clearfix">
+			<!--title div-->
 			<div class="title">PROJECTS</div>
+			<!--1st project-->
 			<div class="col-2">
 				<h2>Happy Sampler</h2>
-				<a href="https://pastoral-play.surge.sh" target="_blank"><img src="images/happy_sampler.jpg"></a>
+				<div class="pr-img-wrap">
+					<a href="http://happy-sampler.surge.sh/" target="_blank"><img src="images/happy_sampler.jpg"></a>
+					<div class="pr-info-div">
+						Happy Sampler is a portal for discovery of FREE audio sample packs and virtual instruments released officially online. Each page displays the list of specifically selected sample packs and virtual instruments picked by various blogs and yours truly.<br><br>
+						The app also features a fully functioning MPC on the home page. Want to play some live drum and bass samples right in your browser? Go ahead, give it a try!!<br><br><br>
+						Built with React.js, Node.js, Express and PostgreSQL.
+					</div>
+				</div>
+				<!--1st project buttons-->
 				<a href="https://pastoral-play.surge.sh" target="_blank"><div class="project-btn">
 					Live
 				</div></a>
@@ -58,9 +85,18 @@
 					Github
 				</div></a>
 			</div>
+			<!--2nd project-->
 			<div class="col-2">
 				<h2>Silent Hill Memory</h2>
-				<a href="https://goalexey.github.io/silent_hill_memory_game/" target="_blank"><img src="images/silent_hill_memory.jpg"></a>
+				<div class="pr-img-wrap">
+					<a href="https://goalexey.github.io/silent_hill_memory_game/" target="_blank"><img src="images/silent_hill_memory.jpg"></a>
+					<div class="pr-info-div">
+						This project is a memory game based on famous survival horror franchise "Silent Hill". In this game, you are presented with a grid of 16 cells. Behind each cell is a picture of a character revealed to you for 4 seconds and then hidden. You have to memorize the location of all the characters, and "save" them by selecting the appropriate cells.<br><br>
+						Avoid the cells with monsters, or you will get a genuine jumpscare!<br><br><br>
+						Built with HTML5, CSS3 and vanilla JavaScript.
+						
+					</div>
+				</div>
 				<a href="https://goalexey.github.io/silent_hill_memory_game/" target="_blank"><div class="project-btn">
 					Live
 				</div></a>
@@ -68,47 +104,43 @@
 					Github
 				</div></a>
 			</div>
+			
+			<!--3rd Projects-->
 			<div class="col-2">
-				<h2>Perscholas Final Project</h2>
-				<a href="https://goalexey.github.io/Alex_G_Final-Project/index.html" target="_blank"><img src="images/agoro_website_img.jpg"></a>
-				<a href="https://goalexey.github.io/Alex_G_Final-Project/index.html" target="_blank"><div class="project-btn">
+				<h2>Hidden Eateries</h2>
+				<div class="pr-img-wrap">
+					<a href="http://hidden-eateries.surge.sh/" target="_blank"><img src="images/hidden_eateries.jpg"></a>
+					<div class="pr-info-div">
+						Hidden Eateries displays the database of great "hidden" restaurants and cafes around 5 boroughs of NYC. The "spots" were featured in various blogs such as Time Out and ThrillList and personally tried for their cuisine. They are definitely worth checking out.
+						If you find yourself hungry, click on the neighborhood you are in at the moment, and see if one of the eateries is close by. You can also comment on each one to leave your review.<br><br><br>
+						Built with React.js, Node.js, Express and PostgreSQL.
+					</div>
+				</div>
+				<a href="http://hidden-eateries.surge.sh/" target="_blank"><div class="project-btn">
 					Live
 				</div></a>
-				<a href="https://github.com/goalexey/Alex_G_Final-Project" target="_blank"><div class="project-btn">
+				<a href="https://github.com/goalexey/hidden-eateries" target="_blank"><div class="project-btn">
 					Github
 				</div></a>
 			</div>
+			
+			<!--4th Project-->
 			<div class="col-2">
-				<h2>Perscholas Alarm-Clock Project</h2>
-				<a href="https://goalexey.github.io/Alarm_Clock_Alex_G/" target="_blank"><img src="images/alarmclock_project_img.jpg"></a>
-				<a href="https://goalexey.github.io/Alarm_Clock_Alex_G/" target="_blank"><div class="project-btn">
+				<h2>Personal Music Portfolio</h2>
+				<div class="pr-img-wrap">
+					<a href="https://goalexey.github.io/alex_g_music_portfolio/index.html" target="_blank"><img src="images/agoro_website_img.jpg"></a>
+					<div class="pr-info-div">
+						My portfolio website for everything to do with my previous and somewhat current music career. The site showcases releases of my classical clarinet records, audio-engineering portfolio with the discography of produced artists, as well as everything to do with electronic music production of my alter ego "Kronodigger".<br><br>
+						If you like classical or underground creative electronic sounds...or need an awesome audio/video recording, please check out this portal.
+					</div>
+				</div>
+				<a href="https://goalexey.github.io/alex_g_music_portfolio/index.html" target="_blank"><div class="project-btn">
 					Live
 				</div></a>
-				<a href="https://github.com/goalexey/Alarm_Clock_Alex_G" target="_blank"><div class="project-btn">
+				<a href="https://github.com/goalexey/alex_g_music_portfolio/" target="_blank"><div class="project-btn">
 					Github
 				</div></a>
 			</div>
-			<div class="col-2">
-				<h2>Perscholas Animation Project</h2>
-				<a href="https://goalexey.github.io/animation_Alex_G/" target="_blank"><img src="images/animation_project_img.jpg"></a>
-				<a href="https://goalexey.github.io/animation_Alex_G/" target="_blank"><div class="project-btn">
-					Live
-				</div></a>
-				<a href="https://github.com/goalexey/animation_Alex_G" target="_blank"><div class="project-btn">
-					Github
-				</div></a>
-			</div>
-			<div class="col-2">
-				<h2>Perscholas Announcement Project</h2>
-				<a href="https://goalexey.github.io/Announcement_Alex_G/" target="_blank"><img src="images/scorn_project_img.jpg"></a>
-				<a href="https://goalexey.github.io/Announcement_Alex_G/" target="_blank"><div class="project-btn">
-					Live
-				</div></a>
-				<a href="https://github.com/goalexey/Announcement_Alex_G" target="_blank"><div class="project-btn">
-					Github
-				</div></a>
-			</div>
-			<div class="clear"></div>
 		</div>
 	</div>
 
@@ -116,21 +148,16 @@
 
 	<!-- <div class="space" id="contact"></div> -->
 	<div class="contact-section">
-		<div class="contact" id="contact">
+		<div id="contact">
 			<div class="title">CONTACT</div>
-			<form method="post" action="contact.php" class="contact-form">
-				<label>Full Name<br>
-					<input name="name" title="Full Name" placeholder="Full Name">
-				</label><br><br>
-				<label>Your Email<br>
-					<input name="email" title="Email" placeholder="Your Email">
-				</label><br><br><br>
-				<label>Your Message<br>
-					<textarea name="message"></textarea>
-				</label>
-				<button type="submit" name="submit" class="my-submit-btn">Submit</button>
-				
-			</form>
+			<div id="contact-inside">
+				<div>Email:</div>
+				<div>goalexey@gmail.com</div>
+				<div id="soc-media-div">
+					<a href="http://facebook.com/goalexey" target="_blank"><img src="images/1498608190_facebook.svg" /></a>
+					<a href="http://github.com/goalexey" target="_blank"><img src="images/1498608245_mark-github.svg" /></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
