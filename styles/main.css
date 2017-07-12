@@ -3,11 +3,11 @@
 /*GENERAL STYLING*/
 
 html{
-	height: 100%;
+	 height: 100%; 
 }
 
 body{
-	height: 100%;
+	 height: 100%; 
 	margin: 0;
 	padding: 0;
 	background: #F1F2B5; /* fallback for old browsers */
@@ -135,6 +135,72 @@ nav div:hover{
 }
 
 
+/*hamburger menu wrapper*/
+.hamburger{
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	height: 36px;
+	width: 35px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+/*general settings for divs inside hamburger menu*/
+.ham1, .ham2, .ham3{
+	position: absolute;
+	left: 5px;
+	width: 25px;
+	height: 2px;
+	background-color: white;
+	border-radius: 1px;
+}
+
+/*Individual height positions for each hamburger menu div*/
+.ham1{
+	top: 7px;
+}
+
+.ham2{
+	top: 16px;
+}
+
+.ham3{
+	top: 25px;
+}
+
+/*hidden mobile nav menu*/
+.mob-nav-menu{
+	display: none;
+	width: 100%;
+	max-height: 0;
+	background-color: white;
+	overflow: hidden; 
+	transition: .5s;
+}
+
+/*mobile nav links*/
+.mob-nav-link{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-sizing: border-box;
+	height: 50px;
+	border-bottom: solid #333 1px;
+}
+
+.mob-nav-menu a{
+	color: #555;
+	font-size: 16px;
+	font-family: sans-serif;
+	font-weight: 200;
+}
+
+.mob-nav-menu a:hover > div{
+	background-color: beige;
+}
 
 
 /*ABOUT SECTION*/
@@ -405,28 +471,77 @@ footer div{
 
 /*ANIMATIONS*/
 
-@keyframes logoTransform {
-	from {transform: rotateY(0deg);}
-	to {transform: rotateY(360deg);}
 
-}
-
-@keyframes letterShadow {
-	0% {text-shadow: 0 0 0 black;}
-	50% {text-shadow: 5px 5px 10px black;}
-	100% {text-shadow: 0 0 0 black;}
-}
-
-@keyframes letterScale {
-	0% {transform: scale(1,1);}
-	50% {transform: scale(1.1, 1.1);}
-	100% {transform: scale(1,1);}
-}
-
+/* Background change for header divs */
 @keyframes bgcChange {
 	0% {background-color: #750000;}
 	50% {background-color: black;}
 	100% {background-color: #750000;}
+}
+
+
+/* Animations for Hamburger menu */
+@keyframes ham1-open{
+	from{
+		transform: rotateZ(0deg);
+		top: 7px;
+		
+	}
+	to{
+		transform: rotateZ(45deg);
+		top: 15px;
+	}
+}
+
+@keyframes ham1-close{
+	from{
+		transform: rotateZ(45deg);
+		top: 15px;
+	}
+	to{
+		transform: rotateZ(0deg);
+		top: 7px;
+	}
+}
+
+@keyframes ham2-open{
+	from{
+		left: 5px;
+	}
+	to{
+		left: 36px;
+	}
+}
+
+@keyframes ham2-close{
+	from{
+		left: 36px;
+	}
+	to{
+		left: 5px;
+	}
+}
+
+@keyframes ham3-open{
+	from{
+		transform: rotateZ(0deg);
+		top: 25px;
+	}
+	to{
+		transform: rotateZ(-45deg);
+		top: 15px;
+	}
+}
+
+@keyframes ham3-close{
+	from{
+		transform: rotateZ(-45deg);
+		top: 15px;
+	}
+	to{
+		transform: rotateZ(0deg);
+		top: 25px;
+	}
 }
 
 /*###################################
@@ -517,12 +632,21 @@ footer div{
 	
 	
 	/*mobile menu div*/
+	.mob-nav-menu{
+		display: block;
+	}
+	
+	
 	#mobile-menu{
 		display: block;
 	}
 	
 	nav{
 		display: none;
+	}
+	
+	.hamburger{
+		display: block;
 	}
 	
 	
